@@ -1,0 +1,52 @@
+.win32{
+    --titleBtnAlign: flex-end;
+    --titleBtnHeight: 30px;
+    --titleBtnWidth: 45px;
+    --titleBtnOrder: row;
+    --minBtnImg: url();
+    --scaleBtnImg: url();
+    --closeBtnImg: url();
+}
+.darwin{
+    --titleBtnAlign: flex-end;
+    --titleBtnHeight: 30px;
+    --titleBtnWidth: 30px;
+    --titleBtnOrder: row-reverse;
+    --minBtnImg: url();
+    --scaleBtnImg: url();
+    --closeBtnImg: url();
+}
+.std{
+    --titleBtnAlign: flex-end;
+    --titleBtnHeight: 30px;
+    --titleBtnWidth: 30px;
+    --titleBtnOrder: row;
+    --minBtnImg: url();
+    --scaleBtnImg: url();
+    --closeBtnImg: url();
+}
+
+.stBtn{
+    height: var(--titleBtnHeight);
+    width: var(--titleBtnWidth);
+}
+#closeBtn{
+
+}
+#scaleBtnImg{
+
+}
+#minBtnImg{
+
+}
+#titleBar{
+    -webkit-app-region: drag;
+    display: flex;
+    flex-direction: var(--titleBtnOrder);
+    justify-content: var(--titleBtnAlign);
+    height: 30px;
+    width: 100%;
+}
+body{
+    margin: 0;
+}
